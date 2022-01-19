@@ -11,6 +11,17 @@ repositories {
     mavenCentral()
 }
 
+gradlePlugin {
+    plugins {
+        dmp {
+            id = 'org.example.frameworkPlugin'
+            implementationClass = 'dmp.DmpPlugin'
+
+        }
+
+    }
+}
+
 test {
     useJUnitPlatform()
 }
